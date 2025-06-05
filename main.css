@@ -1,6 +1,7 @@
 /* RESET CSS */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -217,7 +218,7 @@ section.loader{
 .loaderInner .full{
 	width: 100%;
 	height: 3px;
-	background-color: green;
+	background-color: blue;
 	position: relative;
 	right: 100%;
 	transition: width 0.1s linear;

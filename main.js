@@ -5,40 +5,28 @@ var actualState =  undefined
 
 const checkState = () =>{
     const windowHeight = window.innerHeight  
-    var positions = []
     var newStateTemp = 0
     checkPointElements.forEach(element => {
         distanceFromTop = element.getBoundingClientRect().bottom - windowHeight
-        // console.log(element)
-        // console.log(distanceFromTop)
         if(distanceFromTop<0){
-            positions.push(distanceFromTop) // we don't need the element id because this will be in order I think
             newStateTemp ++;
         }
     });
     actualState = newStateTemp
 }
-//EVENT LISTENER
 timing = 100
 checkPosition = (isRecursed) => {
     document.removeEventListener('scroll', checkPosition)
     checkState()
-    // const changeRequired = changeDecomposer(actualState, internalState)
     console.log('entered check')
     const sleepyLoop = () =>{
         checkState()
-        console.log('actual and internal state')
-        console.log(actualState, internalState)
-        // console.log(currEl)
         if(actualState===internalState){
-            console.log('exiting')
             document.addEventListener('scroll', checkPosition)
-            return null;
-            
+            return null;        
         }
         if(actualState>internalState){
             const currEl = lineElements[internalState].querySelector('.full')
-            console.log('increasing')
             currEl.classList.remove('off')
             internalState++;
             setTimeout(()=>{sleepyLoop()}, timing)
@@ -51,7 +39,6 @@ checkPosition = (isRecursed) => {
         }
     }
     sleepyLoop()
-
 }
 document.addEventListener('scroll', checkPosition)
 checkPosition()
