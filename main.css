@@ -156,6 +156,7 @@ section.loader{
 	position: sticky;
 	top: 44px;
 	z-index: 99;
+    /* box-shadow: 0px 10px 20px 5px rgba(103, 103, 103, 0.384); */
 }
 .loaderInner{
 	width: 60%;
