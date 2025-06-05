@@ -1,0 +1,22 @@
+{
+  "name": "code-msc25",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenu-k/CERN-EventPage.git"
+  },
+  "author": "Thenu Kaluarachchige",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenu-k/CERN-EventPage/issues"
+  },
+  "homepage": "https://github.com/thenu-k/CERN-EventPage#readme",
+  "description": "",
+  "dependencies": {
+    "stunk": "^2.3.1"
+  }
+}

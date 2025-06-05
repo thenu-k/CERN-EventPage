@@ -184,6 +184,7 @@ section.loader{
 	height: 3em;
 	border: 2px solid black;
 	border-radius:5px;
+	position: relative;
 }
 .loaderInner .item a{
 	height: 100%;
@@ -203,12 +204,26 @@ section.loader{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	position: relative;
 	
 }
 .loaderInner .between > div.empty{
 	width: 100%;
 	height: 3px;
 	background-color: white;
+	position: relative;
+}
+
+.loaderInner .full{
+	width: 100%;
+	height: 3px;
+	background-color: green;
+	position: relative;
+	right: 100%;
+	transition: width 0.5s linear;
+}
+.loaderInner .full.off{
+	width: 0%;
 }
 
 /* Prizes */
@@ -282,6 +297,7 @@ section.rules{
 .rules ol{
 	/* margin: 20px 0; */
 	list-style:decimal;
+	list-style-position: inside;
 	width: 100%;
 }
 /* Misc */
@@ -292,4 +308,17 @@ section.end{
 }
 body> section:last-of-type{
 	padding-bottom: 100px;
+}
+
+/* Topics */
+.topicsInner{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/* Register */
+section.register{
+	height: auto;
 }
