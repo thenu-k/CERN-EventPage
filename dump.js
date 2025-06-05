@@ -120,3 +120,35 @@
     //         }
     //     }
     // }ch
+
+
+        // const changeDecomposition = Decompose(changeOfState, SelfSum(changeOfState))
+    // console.log('current state and change')
+    // console.log(stateVariable)
+    // console.log(stateDecomposition)
+    // if(stateDecomposition!==undefined){
+    //     let counter = 0;
+    //     const sleepyLoop = (counter) =>{
+    //         handleStateChange(stateDecomposition[counter], SelfSum(stateDecomposition[counter]))
+    //         stateVariable = checkState().slice()
+    //         counter++;
+    //         if(counter>=stateDecomposition.length){
+    //             setTimeout(()=>{
+    //                 checkPosition(true)
+    //                 document.addEventListener('scroll', checkPosition)
+    //                 return NaN
+    //             }, 800)
+    //         }else{
+    //             setTimeout(()=>{
+    //                 sleepyLoop(counter)
+    //             }, 800)
+    //         }
+    //     }
+    //     sleepyLoop(counter)
+    // }else{
+    //     stateVariable = checkState().slice()
+    //     if(!isRecursed){
+    //         checkPosition(true)
+    //     }
+    //     document.addEventListener('scroll', checkPosition)
+    // }

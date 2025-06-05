@@ -220,7 +220,7 @@ section.loader{
 	background-color: green;
 	position: relative;
 	right: 100%;
-	transition: width 0.5s linear;
+	transition: width 0.1s linear;
 }
 .loaderInner .full.off{
 	width: 0%;
