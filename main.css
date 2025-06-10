@@ -109,6 +109,9 @@ body > .bg{
 	align-items: center;
 	padding: 50px 0;
 }
+body > .bg > *{
+	max-width: 1000px;
+}
 .landing{
 	width: 100%;
 	height: 500px;
@@ -218,13 +221,18 @@ section.loader{
 .loaderInner .full{
 	width: 100%;
 	height: 3px;
-	background-color: blue;
+	background-color: #2980B9;
 	position: relative;
 	right: 100%;
 	transition: width 0.1s linear;
+	  /* box-shadow:
+		0 0 5px 0px #fff, 
+		0 0 7px 0px #f0f, 
+		0 0 9px 0px #0ff;  */
 }
 .loaderInner .full.off{
 	width: 0%;
+	box-shadow: unset;
 }
 
 /* Prizes */
@@ -241,36 +249,11 @@ h3.subtitle{
 .prizesInner p{
 	margin-bottom: 20px
 }
-
 .prizes .links{
-	margin-top: 20px;
 	width: 60%;
-	display: flex;
-	align-items: center;
 }
-.prizes .links >div{
-	flex-grow: 1;
-	flex-shrink: 1;
-	height: 250px;
-	background-color: black;
-	background-size: cover;
-	/* background-position: 0 -100%; */
-}
-.prizes .links a{
-	width: 100%;
-	height: 100%;
-	padding: 20px 50px;
-	display: flex;
-	align-items: flex-end;
-	font-weight: 800;
-	font-size: 1.2em;
-	color: white;
-	background: #424242;
-	background: #000000;
-	background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.52) 28%, rgba(0, 0, 0, 0) 100%);}
-.prizes .links >div:first-of-type{
-	margin-right: 20px;
-}
+
+
 .prizes .random{
 	background-image: url('/media/random.JPG')
 }
@@ -278,9 +261,7 @@ h3.subtitle{
 	background-image: url('/media/random3.png');
 	background-position: 0 50%;
 }
-.prizes .links a:hover{
-	background: none;
-}
+
 
 /* Rules */
 section.rules{
@@ -318,7 +299,68 @@ body> section:last-of-type{
 	flex-direction: column;
 	align-items: flex-start;
 }
+section.topics{
+	padding-bottom: 0;
+}
 
+.links{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.links >div{
+	/* flex-grow: 1; */
+	margin-bottom: 20px;
+	flex-shrink: 1;
+	width: 49%;
+	height: 250px;
+	background-color: black;
+	background-size: cover;
+	position: relative;
+	/* background-position: 0 -100%; */
+}
+.links a{
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	display: flex;
+	align-items: flex-end;
+	/* background: #424242;
+	background: #000000; */
+	opacity: 1;
+	background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.52) 28%, rgba(0, 0, 0, 0) 100%);
+	transition: opacity 0.25s ease-out;
+}
+ .links > div >p{
+	position: relative;
+	z-index: 9;
+	bottom: 20%;
+	left: 12.5%;
+	font-weight: 800;
+	font-size: 1.2em;
+	color: white;
+}
+.links a:hover{
+	opacity: 0.5;
+}
+.topics>div> p{
+	margin-bottom: 20px;
+}
+.topics .qm{
+	background-image: url('/media/qm.avif');
+}
+.topics .accel{
+	background-image: url('/media/accel.jpg')
+}
+.topics .medical{
+	background-image: url('/media/medical.webp')
+}
+.topics .astr{
+	background-image:url('/media/astr.jpg')
+}
 /* Register */
 section.register{
 	height: auto;

@@ -17,10 +17,15 @@ const checkState = () =>{
 timing = 100
 checkPosition = (isRecursed) => {
     document.removeEventListener('scroll', checkPosition)
-    checkState()
-    console.log('entered check')
+    if(isRecursed!==true){
+        checkState
+    }
     const sleepyLoop = () =>{
-        checkState()
+        if(isRecursed!==true){
+            checkState()
+        }
+        console.log('Actual and internal state')
+        console.log(actualState, internalState)
         if(actualState===internalState){
             document.addEventListener('scroll', checkPosition)
             return null;        
@@ -43,4 +48,12 @@ checkPosition = (isRecursed) => {
 document.addEventListener('scroll', checkPosition)
 checkPosition()
 
+const rulesClick = (toState) =>{
+    document.removeEventListener('scroll', checkPosition)
+    actualState = toState
+    console.log('clicked')
+    checkPosition(true)
+}
 
+// I don't think the click function is not working because of an event listener. In some cases I need two clicks to get hte state right. 
+// when I click topic, that requires two further clicks. Everthing else is just one.
