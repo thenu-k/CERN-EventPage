@@ -76,7 +76,7 @@ body{
 	align-items: flex-end;
 	color: white;
 	padding: 10px 50px;
-	position: sticky;
+	position: fixed;
 	top:0;
 	z-index: 9999;
 	font-size: 1em;
@@ -103,9 +103,9 @@ body{
 	position: fixed;
 	z-index: -1;
 	top: 0; left: 0;
-	height: 100vh;
+	height: 500px;
 	width: 100%;
-	background-image: url('/media/landing2.jpg');
+	background-image: url('https://images.pexels.com/photos/17485710/pexels-photo-17485710.png');
 	background-size:cover;
 	background-position: center;
 }
@@ -150,7 +150,7 @@ body > .bg > *{
 	margin-top:0;
 }
 @media screen and (max-width: 1200px) {
-    .landing{
+    .landing, .backgroundImage{
         height: 50vh;
     }
     .landing h1{
@@ -163,11 +163,12 @@ body > .bg > *{
     }   
 }
 @media screen and (max-width: 800px) {
-    .landing{
+    .landing, .backgroundImage{
         height: 50vh;
     }
     .landing h1{
         font-size: 1.5em;
+        text-align: center;
     }
     .landing h2{
         font-size: 1em;
@@ -194,6 +195,6 @@ span.bold{
 }
 
 /* Internal Navigation */
-.navigationInner{
+/* .navigationInner{
 
-}
+} */
