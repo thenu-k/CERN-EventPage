@@ -1,5 +1,7 @@
 const checkPointElements = document.querySelectorAll(".chkp")
 const lineElements = document.querySelectorAll(".between")
+const loaderElement = document.querySelector("section.loader")
+const navElement = document.querySelector(".credentialsOuter")
 var internalState =0
 var actualState =  undefined
 
@@ -13,6 +15,12 @@ const checkState = () =>{
         }
     });
     actualState = newStateTemp
+
+    if(loaderElement.getBoundingClientRect().top<=44){
+        loaderElement.classList.remove('LONG')
+    }else{
+        loaderElement.classList.add('LONG')
+    }
 }
 timing = 100
 checkPosition = (isRecursed) => {
@@ -24,12 +32,12 @@ checkPosition = (isRecursed) => {
         if(isRecursed!==true){
             checkState()
         }
-        console.log('Actual and internal state')
-        console.log(actualState, internalState)
         if(actualState===internalState){
             document.addEventListener('scroll', checkPosition)
             return null;        
         }
+        // console.log('Actual and internal state')
+        // console.log(actualState, internalState)
         if(actualState>internalState){
             const currEl = lineElements[internalState].querySelector('.full')
             currEl.classList.remove('off')
@@ -51,9 +59,25 @@ checkPosition()
 const rulesClick = (toState) =>{
     document.removeEventListener('scroll', checkPosition)
     actualState = toState
-    console.log('clicked')
-    checkPosition(true)
+    // console.log('clicked')
+    setTimeout(()=>{checkPosition(true)}, 750)
 }
 
-// I don't think the click function is not working because of an event listener. In some cases I need two clicks to get hte state right. 
-// when I click topic, that requires two further clicks. Everthing else is just one.
+// The click function was not working because smooth scroll keeps on scrolling after the function readds the event listener.
+
+//Adjusting the pipe lengths
+const cavityElement = document.querySelector(".loaderInner .item")
+const spaceElement = document.querySelector(".loaderInner")
+const pipeElements = document.querySelectorAll(".loaderInner .between")
+const adjustPipeLength = () =>{
+    // console.log('adjusting')
+    const cavityWidth = cavityElement.getBoundingClientRect().width
+    const spaceWidth = spaceElement.getBoundingClientRect().width
+    const pipeLength = (spaceWidth - cavityWidth*4)/3
+    // console.log(spaceWidth - cavityWidth*4)
+    pipeElements.forEach(element =>{
+        element.setAttribute("style",`width:${pipeLength}px`);
+    })
+}
+// window.addEventListener('resize', adjustPipeLength)
+// adjustPipeLength()

@@ -1,0 +1,199 @@
+/* RESET CSS */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  text-align: justify;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  font-family: "Source Sans 3", sans-serif;
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-weight: normal;
+}
+
+nav, main, aside, footer, header, section {
+  display: block;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+input, button, select, textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.center{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+
+/* Styling Starts */
+
+body{
+	line-height: 1.5;
+	font-size: 16px;
+	color: black;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.credentialsOuter{
+	width: 100%;
+	background-color:#222222;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-end;
+	color: white;
+	padding: 10px 50px;
+	position: sticky;
+	top:0;
+	z-index: 9999;
+	font-size: 1em;
+    /* height: 54px;
+    margin-top: -100px */
+}
+.credentialsOuter > div{
+	display: flex;
+	align-items: center;
+}
+.credentialsOuter > div.left > *{
+	margin: 0 5px;
+	font-weight: 600;
+}
+.credentialsOuter > div.right > *{
+	margin: 0 10px;
+}
+@media screen and (max-width: 1200px) {
+    .credentialsOuter{
+    	padding: 10px 25px;
+    }
+}
+.backgroundImage{
+	position: fixed;
+	z-index: -1;
+	top: 0; left: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: url('/media/landing2.jpg');
+	background-size:cover;
+	background-position: center;
+}
+body > .bg{
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 50px;
+}
+body > .bg > *{
+	max-width: 1000px;
+}
+@media screen and (max-width: 1200px) {
+    body .bg > *{
+        width: 80% !important;
+    }
+    *{
+        text-align: left;
+    }
+}
+.landing{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.landing h1{
+	font-size: 2em;
+	font-weight: 800;
+	/* background-color: #336699; */
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+.landing h2{
+	font-size: 1.5em;
+	font-weight: 800;
+	margin-top:0;
+}
+@media screen and (max-width: 1200px) {
+    .landing{
+        height: 50vh;
+    }
+    .landing h1{
+        font-size: 2em;
+    }
+    .landing h2{
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-top:0;
+    }   
+}
+@media screen and (max-width: 800px) {
+    .landing{
+        height: 50vh;
+    }
+    .landing h1{
+        font-size: 1.5em;
+    }
+    .landing h2{
+        font-size: 1em;
+        font-weight: 800;
+        margin-top:0;
+    }   
+}
+.content{
+    padding-top: 50px;
+	padding-bottom: 20px !important;
+}
+.contentInner{
+	width: 60%;
+	margin: 0;
+	padding: 0;
+}
+.contentInner > *{
+	text-align: justify;
+	margin-bottom: 20px;
+}
+span.bold{
+	font-weight: 900;
+	font-size: 1em;
+}
+
+/* Internal Navigation */
+.navigationInner{
+
+}

@@ -1,0 +1,23 @@
+/* Main section */
+.mainInner{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.mainInner h3{
+    font-weight: 800;
+    font-size: 1.5em;
+    
+}
+.mainInner .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mainInner .text p{
+    text-align: justify;
+    margin-top: 20px;
+}

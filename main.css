@@ -1,155 +1,3 @@
-/* RESET CSS */
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-  text-align: justify;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: inherit;
-  font-family: "Source Sans 3", sans-serif;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
-
-nav, main, aside, footer, header, section {
-  display: block;
-}
-
-ul, ol {
-  list-style-type: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-input, button, select, textarea {
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-}
-
-button {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.center{
-	display: flex;
-	align-items: center;
-	justify-content:center;
-}
-
-/* Styling Starts */
-
-body{
-	line-height: 1.5;
-	font-size: 16px;
-	color: black;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.credentialsOuter{
-	width: 100%;
-	background-color:#222222;
-	display: flex;
-	justify-content:space-between;
-	align-items: center;
-	color: white;
-	padding: 10px 50px;
-	position: sticky;
-	top:0;
-	z-index: 9999;
-	font-size: 1em;
-}
-.credentialsOuter > div{
-	display: flex;
-	align-items: center;
-}
-.credentialsOuter > div.left > *{
-	margin: 0 5px;
-	font-weight: 600;
-}
-.credentialsOuter > div.right > *{
-	margin: 0 10px;
-}
-.backgroundImage{
-	position: fixed;
-	z-index: -1;
-	top: 0; left: 0;
-	height: 100vh;
-	width: 100%;
-	background-image: url('/media/landing2.jpg');
-	background-size:cover;
-	background-position: center;
-}
-body > .bg{
-	background-color: white;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 50px 0;
-}
-body > .bg > *{
-	max-width: 1000px;
-}
-.landing{
-	width: 100%;
-	height: 500px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
-}
-.landing h1{
-	font-size: 3em;
-	font-weight: 800;
-	/* background-color: #336699; */
-	border-radius: 5px;
-	padding: 10px 20px;
-}
-.landing h2{
-	font-size: 2em;
-	font-weight: 800;
-	margin-top:0;
-}
-.content{
-	padding-bottom: 20px !important;
-}
-.contentInner{
-	width: 60%;
-	margin: 0;
-	padding: 0;
-}
-.contentInner > *{
-	text-align: justify;
-	margin-bottom: 20px;
-}
-span.bold{
-	font-weight: 900;
-	font-size: 1em;
-}
-
 /* Loader */
 /* body> section:last-of-type{
 	padding-bottom: 1000px;
@@ -159,11 +7,20 @@ section.loader{
 	background-color: white; 
 	position: sticky;
 	top: 44px;
+
 	z-index: 99;
+	/* padding-bottom: 0px; */
+	padding-bottom: 0px;
+	padding-top: 0px;
     /* box-shadow: 0px 10px 20px 5px rgba(103, 103, 103, 0.384); */
+	transition: padding ease-in 100ms;
+}
+section.loader.LONG{
+	padding-bottom: 70px;
 }
 .loaderInner{
 	width: 60%;
+	max-width: 1000px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -234,6 +91,11 @@ section.loader{
 	width: 0%;
 	box-shadow: unset;
 }
+@media screen and (max-width: 1200px) {
+	section.loader{
+		display: none;
+	}
+}
 
 /* Prizes */
 
@@ -255,10 +117,11 @@ h3.subtitle{
 
 
 .prizes .random{
-	background-image: url('/media/random.JPG')
+	background-image: url('/media/lhc.jpg');
+	background-position: 0 50%;
 }
 .prizes .exclusive{
-	background-image: url('/media/random3.png');
+	background-image: url('/media/reas.jpg');
 	background-position: 0 50%;
 }
 
@@ -281,6 +144,9 @@ section.rules{
 	list-style:decimal;
 	list-style-position: inside;
 	width: 100%;
+}
+.rules li{
+	margin-bottom: 10px;
 }
 /* Misc */
 section.end{
@@ -322,6 +188,11 @@ section.topics{
 	position: relative;
 	/* background-position: 0 -100%; */
 }
+@media screen and (max-width: 800px) {
+	.links > div{
+		width: 100%;
+	}
+}
 .links a{
 	width: 100%;
 	height: 100%;
@@ -338,7 +209,7 @@ section.topics{
 	position: relative;
 	z-index: 9;
 	bottom: 20%;
-	left: 12.5%;
+	left: 5%;
 	font-weight: 800;
 	font-size: 1.2em;
 	color: white;
@@ -350,10 +221,12 @@ section.topics{
 	margin-bottom: 20px;
 }
 .topics .qm{
-	background-image: url('/media/qm.avif');
+	background-image: url('/media/qm.jpeg');
+	background-position: 0 50%;
 }
 .topics .accel{
-	background-image: url('/media/accel.jpg')
+	background-image: url('/media/collision.png');
+	background-position: 0 50%;
 }
 .topics .medical{
 	background-image: url('/media/medical.webp')
