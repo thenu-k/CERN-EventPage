@@ -1,5 +1,6 @@
 const checkPointElements = document.querySelectorAll(".chkp")
 const lineElements = document.querySelectorAll(".between")
+const wrapperElement = document.querySelector(".wrapper")
 const loaderElement = document.querySelector("section.loader")
 const navElement = document.querySelector(".credentialsOuter")
 var internalState =0
@@ -15,8 +16,7 @@ const checkState = () =>{
         }
     });
     actualState = newStateTemp
-
-    if(loaderElement.getBoundingClientRect().top<=44){
+    if(wrapperElement.getBoundingClientRect().top<=44){
         loaderElement.classList.remove('LONG')
     }else{
         loaderElement.classList.add('LONG')

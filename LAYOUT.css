@@ -56,6 +56,13 @@ button {
 	align-items: center;
 	justify-content:center;
 }
+body .wrapper{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Styling Starts */
 
@@ -67,6 +74,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    background-color: white;
 }
 .credentialsOuter{
 	width: 100%;
@@ -102,14 +110,14 @@ body{
 .backgroundImage{
 	position: fixed;
 	z-index: -1;
-	top: 0; left: 0;
+	top: 44px; left: 0;
 	height: 500px;
 	width: 100%;
 	background-image: url('https://images.pexels.com/photos/17485710/pexels-photo-17485710.png');
 	background-size:cover;
 	background-position: center;
 }
-body > .bg{
+body .bg{
 	background-color: white;
 	width: 100%;
 	display: flex;
@@ -117,8 +125,11 @@ body > .bg{
 	align-items: center;
 	padding-bottom: 50px;
 }
-body > .bg > *{
+body .bg > *{
 	max-width: 1000px;
+}
+.wrapper section{
+    width: 100%;
 }
 @media screen and (max-width: 1200px) {
     body .bg > *{
@@ -129,6 +140,7 @@ body > .bg > *{
     }
 }
 .landing{
+    margin-top: 44px;
 	width: 100%;
 	height: 500px;
 	display: flex;
@@ -177,7 +189,9 @@ body > .bg > *{
     }   
 }
 .content{
-    padding-top: 50px;
+    background-color: white;
+    padding-top: 80px;
+    /* margin-top: 00px; */
 	padding-bottom: 20px !important;
 }
 .contentInner{
