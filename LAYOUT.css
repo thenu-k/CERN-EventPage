@@ -177,6 +177,9 @@ body .bg > *{
     }   
 }
 @media screen and (max-width: 800px) {
+    *{
+        text-align: left!important;
+    }
     .landing, .backgroundImage{
         height: 50vh;
     }
