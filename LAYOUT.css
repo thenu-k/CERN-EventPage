@@ -63,6 +63,8 @@ body .wrapper{
     flex-direction: column;
     align-items: center;
 }
+/* .wrapper > section{
+    /* transform: translateX(-5%); */
 
 /* Styling Starts */
 
