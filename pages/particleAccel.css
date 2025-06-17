@@ -21,3 +21,22 @@
     text-align: justify;
     margin-top: 20px;
 }
+
+/* Resources */
+.resourcesInner{
+    align-items: flex-start;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+section.resources{
+    margin-top: 0;
+    padding-top: 0;
+}
+section.resources h4{
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.resourcesInner >div{
+    margin-bottom: 40px;
+}
