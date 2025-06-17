@@ -5,7 +5,7 @@ section.loader{
 	background-color: transparent; 
 	position: fixed;
 	top: calc(50% + 22px);
-	left: calc(2.5%);
+	right: calc(2.5%);
 	transform: translate(0, -50%);
 	z-index: 99;
 	width: fit-content !important;
@@ -67,14 +67,14 @@ section.loader.LONG{
 	/* width: 90px; */
 	width: fit-content;
 	position: relative;
-	transform: translate(50%, 0);
-	right: -30px;
+	transform: translate(-50%, 0);
+	left: -30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color:#2980B9;
 	color: black;
-	font-weight: 800;
+	/* font-weight: 800; */
 	/* border-radius: 5px; */
 	font-size: 0.9em;
 	border-bottom: 1px solid black;
@@ -88,6 +88,7 @@ section.loader.LONG{
 	box-shadow: none;
 	transition: border linear 00ms;	
 	/* border: 1px solid black; */
+	/* display: none; */
 }
 .loaderInner .item a:hover{
 	/* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.111); */
