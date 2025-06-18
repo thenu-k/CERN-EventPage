@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 *, *::before, *::after {
@@ -213,8 +214,10 @@ body .bg > *{
         position: relative;
     }
     .landing .backgroundImage{
-        height: 500px;
-        /* position: relative; */
+        height: 400px;
+        position:absolute;
+        top: 0;
+        left: 0;
         z-index: -1;
     }
     .landing h1{
