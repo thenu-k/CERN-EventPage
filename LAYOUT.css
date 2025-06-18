@@ -291,6 +291,8 @@ span.bold{
 	background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.52) 28%, rgba(0, 0, 0, 0) 100%);
 	transition: opacity 0.25s ease-out;
 	border-radius: 10px;
+    position: relative;
+    z-index: 9;
 }
 
 .links a.image.hover{
@@ -299,7 +301,7 @@ span.bold{
 
 .links a.text{
 	position: relative;
-	z-index: 9;
+	z-index: 10;
 	bottom: 20%;
 	left: 5%;
 	font-weight: 800;
