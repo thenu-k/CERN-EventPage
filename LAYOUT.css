@@ -20,6 +20,7 @@ html {
   flex-shrink: 0;
   flex-grow: 0;
   font-weight: normal;
+  outline: 1px solid red !important;
 }
 
 nav, main, aside, footer, header, section {
