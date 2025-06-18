@@ -20,7 +20,7 @@ html {
   flex-shrink: 0;
   flex-grow: 0;
   font-weight: normal;
-  outline: 1px solid red !important;
+  /* outline: 1px solid red !important; */
 }
 
 nav, main, aside, footer, header, section {
@@ -219,7 +219,7 @@ body .bg > *{
         position:absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: 9;
     }
     .landing h1{
         position: relative;
@@ -227,11 +227,13 @@ body .bg > *{
         font-size: 1.2em;
         text-align: justify;
         padding-left: 10%;
+        z-index: 10;
     }
     .landing h2{
-        /* position: relative; */
+        position: relative;
         font-size: 1em;
         padding-left: 10%;
+        z-index: 10;
     }
     .credentialsOuter .left p{
         display: none;
