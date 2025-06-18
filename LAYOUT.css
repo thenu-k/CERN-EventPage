@@ -78,6 +78,11 @@ body{
 	align-items: center;
     background-color: white;
 }
+@media screen and (min-width: 2200px) {
+    body{
+        font-size: 18px;
+    }
+}
 .credentialsOuter{
 	width: 100%;
 	background-color:#222222;
@@ -113,14 +118,14 @@ body{
 	position: fixed;
 	z-index: -1;
 	top: 44px; left: 0;
-	height: 500px;
+	height: 100%;
 	width: 100%;
 	background-image: url('https://images.pexels.com/photos/11756345/pexels-photo-11756345.jpeg');
 	background-size:cover;
 	background-position: center;
 }
 body .bg{
-	background-color: white;
+    background-color: white;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -151,17 +156,23 @@ body .bg > *{
 	align-items: center;
 	color: white;
 }
+@media screen and (min-width: 2200px) {
+    .landing{
+        height: 700px;
+    }
+}
 .landing h1{
-	font-size: 2em;
+    font-size: 2em;
 	font-weight: 800;
 	/* background-color: #336699; */
 	border-radius: 5px;
 	padding: 10px 20px;
 }
 .landing h2{
-	font-size: 1.5em;
+    font-size: 1.5em;
 	font-weight: 800;
 	margin-top:0;
+    /* padding-left: 20px; */
 }
 @media screen and (max-width: 1200px) {
     .landing, .backgroundImage{
@@ -193,6 +204,24 @@ body .bg > *{
         margin-top:0;
     }   
 }
+@media screen and (max-width: 500px) {
+    .landing{
+        align-items: flex-start;
+        height: 200px;
+    }
+    .landing .backgroundImage{
+        height: 500px;
+    }
+    .landing h1{
+        font-size: 1.2em;
+        text-align: justify;
+        padding-left: 10%;
+    }
+    .landing h2{
+        font-size: 1em;
+        padding-left: 10%;
+    }
+}
 .content{
     background-color: white;
     padding-top: 80px;
@@ -211,6 +240,11 @@ body .bg > *{
 span.bold{
 	font-weight: 900;
 	font-size: 1em;
+}
+@media screen and (max-width: 500px) {
+    .content {
+        padding-top: 50px
+    }
 }
 
 /* Internal Navigation */
@@ -245,7 +279,7 @@ span.bold{
 		width: 100%;
 	}
 }
-.links a{
+.links a.image{
 	width: 100%;
 	height: 100%;
 	padding: 20px 50px;
@@ -258,17 +292,19 @@ span.bold{
 	transition: opacity 0.25s ease-out;
 	border-radius: 10px;
 }
- .links > div >p{
+
+.links a.image.hover{
+	opacity: 0.5;
+}
+
+.links a.text{
 	position: relative;
 	z-index: 9;
 	bottom: 20%;
 	left: 5%;
 	font-weight: 800;
 	font-size: 1.2em;
-	color: white;
-}
-.links a:hover{
-	opacity: 0.5;
+	color: white;  
 }
 
 /* LOADER */
@@ -314,10 +350,16 @@ section.loader.LONG{
 .loaderInner .between{
 	width: 1em;
 	height: 15vh;
+    max-height: 150px;
 	border: 2px solid black;
 	border-top: 0;
 	border-bottom: 0;
 }
+/* @media screen and (min-width: ) {
+	.links > div{
+		width: 100%;
+	}
+} */
 .loaderInner .between.end:first-of-type{
 	border-top: 2px solid black;
 }

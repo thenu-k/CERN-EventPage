@@ -43,8 +43,8 @@ checkPosition = (isRecursed, timeOut) => {
                 return null;        
             }
         }
-        console.log('Actual and internal state')
-        console.log(actualState, internalState)
+        // console.log('Actual and internal state')
+        // console.log(actualState, internalState)
         if(actualState>internalState){
             const currEl = lineElements[internalState].querySelector('.full')
             currEl.classList.remove('off')
@@ -69,3 +69,14 @@ const rulesClick = (toState) =>{
     checkPosition(true, 750)
 }
 
+// Link Hover
+const linkParents = document.querySelectorAll(".links >div ")
+const toggleLink = (event) =>{
+    const imageElement = event.target.querySelector('.image')
+    imageElement.classList.toggle('hover')
+}
+
+linkParents.forEach(parent => {
+    parent.addEventListener("mouseenter", (event) => {toggleLink(event)})
+    parent.addEventListener("mouseleave", (event) => {toggleLink(event)})
+})

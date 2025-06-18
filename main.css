@@ -75,56 +75,7 @@ section.topics{
 	padding-bottom: 0;
 }
 
-.links{
-	margin-top: 20px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.links >div{
-	border-radius: 10px;
-	/* flex-grow: 1; */
-	margin-bottom: 20px;
-	flex-shrink: 1;
-	width: 49%;
-	height: 250px;
-	background-color: black;
-	background-size: cover;
-	position: relative;
-	/* background-position: 0 -100%; */
-}
-@media screen and (max-width: 800px) {
-	.links > div{
-		width: 100%;
-	}
-}
-.links a{
-	width: 100%;
-	height: 100%;
-	padding: 20px 50px;
-	display: flex;
-	align-items: flex-end;
-	/* background: #424242;
-	background: #000000; */
-	opacity: 1;
-	background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.52) 28%, rgba(0, 0, 0, 0) 100%);
-	transition: opacity 0.25s ease-out;
-	border-radius: 10px;
-}
- .links > div >p{
-	position: relative;
-	z-index: 9;
-	bottom: 20%;
-	left: 5%;
-	font-weight: 800;
-	font-size: 1.2em;
-	color: white;
-}
-.links a:hover{
-	opacity: 0.5;
-}
+
 .topics>div> p{
 	margin-bottom: 20px;
 }
