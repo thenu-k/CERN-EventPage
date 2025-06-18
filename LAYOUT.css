@@ -208,18 +208,29 @@ body .bg > *{
     .landing{
         align-items: flex-start;
         height: 200px;
+        overflow: hidden;
+        justify-content: center;
+        position: relative;
     }
     .landing .backgroundImage{
         height: 500px;
+        /* position: relative; */
+        z-index: -1;
     }
     .landing h1{
+        position: relative;
+        /* top: 0%; */
         font-size: 1.2em;
         text-align: justify;
         padding-left: 10%;
     }
     .landing h2{
+        /* position: relative; */
         font-size: 1em;
         padding-left: 10%;
+    }
+    .credentialsOuter .left p{
+        display: none;
     }
 }
 .content{
