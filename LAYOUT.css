@@ -480,3 +480,25 @@ section.loader.LONG{
 		display: none;
 	}
 }
+
+/* HOME */
+/* .homeOuter{
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+} */
+.homeOuter >div {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+.homeOuter a{
+    color: white;
+    font-weight: 800;
+    background-color: #2980B9;
+    padding: 10px 20px;
+    border: 2px solid #F1862D;
+}
+.homeOuter a:hover{
+    opacity: 0.9;
+}

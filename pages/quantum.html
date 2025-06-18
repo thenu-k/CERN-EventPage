@@ -9,16 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="main.js" defer></script>
+    <script src="../main.js" defer></script>
 </head>
 <body>
-    <section class="backgroundImage">
-
-    </section>
     <section class="credentialsOuter">
         <div class="left">
             <h2>CERN</h2>
-            <p>Accelerating Science</p>
+            <a href="">Accelerating Science</a>
         </div>
         <div class="right">
             <a href="">Sign In</a>
@@ -26,35 +23,108 @@
         </div>
     </section>
     <section class="landing">
+        <section class="backgroundImage"></section>
         <h1>Midsummer Science Compeition</h1>
         <h2>MSc25</h2>
     </section>
-    <section class="main bg">
-        <div class="mainInner">
-            <h3>Quantum Mechanics</h3>
-            <div class="text">
-                <p>
-                    Quantum mechanics challenges the deterministic view of nature that physics held for centuries. Like most advancements in physics, this paradigm shift was brought on by experimental observations that were inconsistent with existing theories. Why do gases emit only certain wavelengths of light when heated? Why do electrons behave like waves when passing through slits? How do we model the emission spectrum of an object? Such questions, and the ingenious work of many scientists in the early 20th century laid the foundation for our modern understanding of quantum theory. 
-                </p>
-                <p>
-                    Results from quantum mechanics have had revolutionary impacts on modern life. The widespread use of computers with semiconductor technology, the LEDs/OLEDs on your phone screens, X-rays and MRI machines, are just a few technologies that can be attributed to quantum mechanics. 
-                </p>
-                <p>
-                    With all this said, quantum physics is considered to be an unintuitive subject. A combination of unfamiliar rules, and abstract mathematics has made it appear intimidating. But like many theories in science, it is possible to learn the concept at different levels of depth. Complex mathematics provides a useful framework for calculation, but it is very much possible to appreciate the world of quantum mechanics from a non-specialist standpoint. 
-                </p>
-                <p>
-                    2025 has been deemed the year of Quantum Science and Technology, and thus we are keen to see submissions related to this subject.
-
-To learn more about quantum mechanics, you may research the following:
-                </p>
+    <div class="wrapper">
+        <section class="loader center LONG">
+            <div class="loaderInner">
+                <div class="item center">
+                    <a href="#rules" onclick="rulesClick(0)">FOUNDATION</a>
+                </div>
+                <div class="mid between ">
+                    <div class="empty"></div>
+                    <div class="full off"></div>
+                </div>
+                <div class="item center">
+                    <a href="#topics" onclick="rulesClick(1)">MATHS</a>
+                </div>
+                <div class="right between ">
+                    <div class="empty"></div>
+                    <div class="full off"></div>
+                </div>
+                <div class="item center">
+                    <a href="#register" onclick="rulesClick(2)">SPIN</a>
+                </div> 
+                            <div class="right between ">
+                    <div class="empty"></div>
+                    <div class="full off"></div>
+                </div> 
+                <div class="item center">
+                    <a href="#register" onclick="rulesClick(2)">APPLICATIONS</a>
+                </div>  
+                            <div class="right between ">
+                    <div class="empty"></div>
+                    <div class="full off"></div>
+                </div>
+                <div class="item center">
+                    <a href="#register" onclick="rulesClick(2)">BEYOND</a>
+                </div>  
+                <!-- <div class="5 between end"></div>  -->
             </div>
-        </div>
-    </section>
-    <section class="resources bg">
-        <h3>Resources</h3>
-        <div class="resourcesInner">
-            
-        </div>
-    </section>
+        </section>
+        <section class="main bg">
+            <div class="mainInner">
+                <h3>Quantum Mechanics</h3>
+                <div class="text">
+                    <p>
+                        Quantum mechanics challenges the deterministic view of nature that physics held for centuries. Like most advancements in physics, this paradigm shift was brought on by experimental observations that were inconsistent with existing theories. Why do gases emit only certain wavelengths of light when heated? Why do electrons behave like waves when passing through slits? How do we model the emission spectrum of an object? Such questions, and the ingenious work of many scientists in the early 20th century laid the foundation for our modern understanding of quantum theory. 
+                    </p>
+                    <p>
+                        Results from quantum mechanics have had revolutionary impacts on modern life. The widespread use of computers with semiconductor technology, the LEDs/OLEDs on your phone screens, X-rays and MRI machines, are just a few technologies that can be attributed to quantum mechanics. 
+                    </p>
+                    <p>
+                        With all this said, quantum physics is considered to be an unintuitive subject. A combination of unfamiliar rules, and abstract mathematics has made it appear intimidating. But like many theories in science, it is possible to learn the concept at different levels of depth. Complex mathematics provides a useful framework for calculation, but it is very much possible to appreciate the world of quantum mechanics from a non-specialist standpoint. 
+                    </p>
+                    <p>
+                        2025 has been deemed the year of Quantum Science and Technology, and thus we are keen to see submissions related to this subject.
+    
+    To learn more about quantum mechanics, you may research the following:
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="homeOuter bg">
+            <div>
+                <a href="/" class="home">HOME</a>
+            </div>
+        </section>
+        <section class="resources bg">
+            <div class="resourcesInner">
+                <h3>Topics</h3>
+                <div class="text">
+                    <h4>The foundations of quantum mechanics</h4>
+                    <p>Double slit experiment</p>
+                    <p>Max Planck and the UV catastrophe </p>
+                    <p>Gas emission spectra </p>
+                    <p>Photoelectric effect</p>
+                </div>
+                <div class="text">
+                    <h4 class="chkp">The mathematics of quantum mechanics</h4>
+                    <p>The quantum wavefunction</p>
+                    <p>Quantum operations</p>
+                    <p>Wavefunction collapse</p>
+                    <p>Schrodinger's equation</p>
+                    <p>Where does the quantum in QM come from?</p>
+                </div>
+            <div class="text">
+                <h4 class="chkp">Quantum spin</h4>
+                <p>What is quantum spin?</p>
+                <p>Using spin to detect the Higgs Boson</p>
+            </div>
+            <div class="text">
+                <h4 class="chkp">Applications of quantum mechanics</h4>
+                <p>X-ray machines and MRIs</p>
+                <p>LEDs and OLEDs</p>
+                <p>Quantum computing</p>
+            </div>
+            <div class="text">
+                <h4 class="chkp">Beyond QM</h4>
+                <p>What is quantum field theory and why do we need it?</p>
+            </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

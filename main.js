@@ -43,8 +43,8 @@ checkPosition = (isRecursed, timeOut) => {
                 return null;        
             }
         }
-        // console.log('Actual and internal state')
-        // console.log(actualState, internalState)
+        console.log('Actual and internal state')
+        console.log(actualState, internalState)
         if(actualState>internalState){
             const currEl = lineElements[internalState].querySelector('.full')
             currEl.classList.remove('off')
