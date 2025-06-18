@@ -51,3 +51,7 @@
 .resources .text p{
     margin-bottom: 10px;
 }
+
+.loaderInner .between{
+    height: 12vh !important;
+}

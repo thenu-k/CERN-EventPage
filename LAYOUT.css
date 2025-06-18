@@ -122,9 +122,9 @@ body{
 	top: 44px; left: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url('https://images.pexels.com/photos/11756345/pexels-photo-11756345.jpeg');
+    background-image: url('https://cds.cern.ch/record/2461657/files/icon1440-2005-01-013_X_CERN_02763_0011.jpg?subformat=icon-1440');
 	background-size:cover;
-	background-position: center;
+	background-position: 0 100%;
 }
 .wrapper{
     position: relative;

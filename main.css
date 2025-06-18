@@ -23,7 +23,7 @@ h3.subtitle{
 
 
 .prizes .random{
-	background-image: url('/media/lhc.jpg');
+	background-image: url('https://cds.cern.ch/record/2597993/files/1991-07-003_X_CERN_05338_0001_icon-1440.jpg?subformat=icon-1440');
 	background-position: center;
 }
 .prizes .exclusive{
@@ -80,19 +80,19 @@ section.topics{
 	margin-bottom: 20px;
 }
 .topics .qm{
-	background-image: url('/media/qm.jpeg');
+	background-image: url('https://cds.cern.ch/record/2444753/files/icon1440-1993-07-075_X_CERN_02124_0001.jpg?subformat=icon-1440');
 	background-position: center;
 }
 .topics .accel{
-	background-image: url('/media/collision.png');
+	background-image: url('https://cds.cern.ch/record/2472380/files/icon1440-HEMMER_X_CERN_00194_0209.jpg?subformat=icon-1440');
 	background-position: center;
 }
-.topics .medical{
+/* .topics .medical{
 	background-image: url('/media/medical.webp');
 }
 .topics .astr{
 	background-image:url('/media/astr.jpg')
-}
+} */
 /* Register */
 section.register{
 	height: auto;

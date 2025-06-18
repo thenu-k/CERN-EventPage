@@ -40,3 +40,45 @@ section.resources h4{
 .resourcesInner >div{
     margin-bottom: 40px;
 }
+
+/* images */
+.links .image{
+    background-position: center !important;
+}
+.res-ov{
+    background-image: url('https://cds.cern.ch/record/2460483/files/icon1440-2001-02-037_X_CERN_00625_0001.jpg?subformat=icon-1440');
+    background-position:center;
+}
+.res-higgs{
+    background-image: url('https://cds.cern.ch/record/2451962/files/icon1440-1995-06-025_X_CERN_02853_0001.jpg?subformat=icon-1440')
+}
+.res-anti{
+    background-image: url('https://cds.cern.ch/record/2461753/files/icon1440-2008-08-018_X_CERN_00591_0001.jpg?subformat=icon-1440')
+}
+.links .res-vid{
+    background-image: url('https://cds.cern.ch/record/2462157/files/icon1440-ALEPH_X_CERN_00222_0062.jpg?subformat=icon-1440')
+}
+.ac-ov{
+    background-image: url('https://cds.cern.ch/record/2454144/files/icon1440-1995-05-012_X_CERN_04315_0005.jpg?subformat=icon-1440')
+}
+.ac-rf{
+    background-image: url('https://cds.cern.ch/record/2379618/files/icon1440-1970-04_X_CERN_14232_0010.jpg?subformat=icon-1440')
+}
+.ac-mag{
+    background-image: url('https://cds.cern.ch/record/2851381/files/DSC00113.jpg?subformat=icon-1440')
+}
+.ac-vid{
+    background-image: url('https://cds.cern.ch/record/2462160/files/icon1440-ALEPH_X_CERN_00222_0065.jpg?subformat=icon-1440')
+}
+.im-ov{
+    background-image: url('https://cds.cern.ch/record/2348802/files/2004-08-011X_01_icon1440.jpg?subformat=icon-1440')
+}
+.im-health{
+    background-image: url('https://cds.cern.ch/record/2440397/files/icon1440-1993-02-031_X_CERN_00810_0001.jpg?subformat=icon-1440')
+}
+.im-aero{
+    background-image: url('https://cds.cern.ch/record/2748830/files/202101-002_01.jpg?subformat=icon-1440')
+}
+.im-vid{
+    background-image: url('https://cds.cern.ch/record/2462167/files/icon1440-ALEPH_X_CERN_00222_0072.jpg?subformat=icon-1440')
+}
