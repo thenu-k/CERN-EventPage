@@ -24,11 +24,11 @@ h3.subtitle{
 
 .prizes .random{
 	background-image: url('/media/lhc.jpg');
-	background-position: 0 50%;
+	background-position: center;
 }
 .prizes .exclusive{
 	background-image: url('/media/reas.jpg');
-	background-position: 0 50%;
+	background-position: center;
 }
 
 
@@ -81,14 +81,14 @@ section.topics{
 }
 .topics .qm{
 	background-image: url('/media/qm.jpeg');
-	background-position: 0 50%;
+	background-position: center;
 }
 .topics .accel{
 	background-image: url('/media/collision.png');
-	background-position: 0 50%;
+	background-position: center;
 }
 .topics .medical{
-	background-image: url('/media/medical.webp')
+	background-image: url('/media/medical.webp');
 }
 .topics .astr{
 	background-image:url('/media/astr.jpg')
